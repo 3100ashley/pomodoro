@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  
+    margin: 0;
+    padding: 0;
+  }
+#root {
+    box-sizing: border-box;
+  
+    margin: 0;
+    padding: 0;
+    margin-top: -45px;
+    height: 100vh;
+    width: 100vw;
+
+}
+body {
+    background: url("./Pomodoro.svg");
+    height: 95vh;
+    width: 95vw;
+    font-family: "lato";
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: 5%;
+}
+
+
+.container {
+
+    background-color:#EE9D90;
+    border-radius: 5%;
+    height: 600px;
+    width: 1150px;
+    margin: auto;
+    margin-top: 100px;
+
+
+}
+
+
+
+.btnContainer{
+    display: flex;
+    justify-content: space-around;
+
+
+    
+    
+
+}
+
+
+.timerButton {
+    background-color: #DB8375;
+    height: 80px;
+    width: 280px;
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+    
+}
+
+
+.timerContainer{
+    height: 200px;
+    width: 450px;
+    background-color: #FFE5E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 8%;
+
+}
+
+.time{
+    font-size: 100px;
+
+}
+
+.templateBtnContainer{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.templateBtn{
+    font-size: 80px;
+    color: white;
+
+}

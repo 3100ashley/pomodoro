@@ -6,10 +6,12 @@ function CreateTimer(props){
     let minutes;
     let seconds = "00";
 
-
     const [time,setTime] = useState(props.min + ":" + seconds);
 
+    let isStarted = false;
     function handleStart(){
+        
+        isStarted = true;
         minutes = props.min - 1;
         seconds = "59";
         if(minutes < 10){
@@ -49,7 +51,7 @@ function CreateTimer(props){
 
         let minutes_interval = setInterval(minutesTimer, 60000);
         let seconds_interval = setInterval(secondsTimer, 1000);
-        
+           
     }
 
 
@@ -58,7 +60,7 @@ function CreateTimer(props){
     }
 
 
-    return <Template timer={time} handleStart={handleStart} handleStop={handleStop}></Template>
+    return <Template timer={time} handleStart={!isStarted && handleStart} handleStop={handleStop}></Template>
 }
 
 export default CreateTimer;
