@@ -3,15 +3,15 @@ import Template from "./Template";
 
 
 function CreateTimer(props){
-    let minutes;
+    let minutes = "00";
     let seconds = "00";
 
     const [time,setTime] = useState(props.min + ":" + seconds);
 
-    let isStarted = false;
+    // let isStarted = false;
     function handleStart(){
-        
-        isStarted = true;
+
+       // isStarted = true;
         minutes = props.min - 1;
         seconds = "59";
         if(minutes < 10){
@@ -60,7 +60,9 @@ function CreateTimer(props){
     }
 
 
-    return <Template timer={time} handleStart={!isStarted && handleStart} handleStop={handleStop}></Template>
+
+
+    return <Template  timer={time} handleStart={handleStart} handleStop={handleStop}></Template>
 }
 
 export default CreateTimer;
