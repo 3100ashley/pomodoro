@@ -4,9 +4,9 @@
     margin: 0;
     padding: 0;
   }
+
 #root {
     box-sizing: border-box;
-  
     margin: 0;
     padding: 0;
     margin-top: -45px;
@@ -28,34 +28,57 @@ button {
     border-radius: 5%;
 }
 
-
-.container {
-
-    background-color:#EE9D90;
+.containerPomodoro {
+    background-color: #EE9D90;
     border-radius: 5%;
     height: 600px;
     width: 1150px;
     margin: auto;
     margin-top: 100px;
-
-
 }
 
-
+.containerShort {
+    background-color: #95B8C7;
+    border-radius: 5%;
+    height: 600px;
+    width: 1150px;
+    margin: auto;
+    margin-top: 100px;
+}
+.containerLong {
+    background-color: #EBB28D;
+    border-radius: 5%;
+    height: 600px;
+    width: 1150px;
+    margin: auto;
+    margin-top: 100px;
+}
 
 .btnContainer{
     display: flex;
     justify-content: space-around;
-
-
-    
-    
-
 }
 
-
-.timerButton {
+.timerButtonPomodoro {
     background-color: #DB8375;
+    height: 80px;
+    width: 280px;
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+  
+}
+.timerButtonShort {
+    background-color: #83A3B2;
+    height: 80px;
+    width: 280px;
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+    
+}
+.timerButtonLong {
+    background-color: #EDA06E;
     height: 80px;
     width: 280px;
     margin-top: 30px;
@@ -64,8 +87,7 @@ button {
     
 }
 
-
-.timerContainer{
+.timerContainerPomodoro{
     height: 200px;
     width: 450px;
     background-color: #FFE5E1;
@@ -80,7 +102,6 @@ button {
 
 .time{
     font-size: 100px;
-
 }
 
 .templateBtnContainer{
@@ -88,11 +109,9 @@ button {
     display: flex;
     justify-content: center;
     gap: 25px;
-
 }
 
 .templateBtn{
     font-size: 80px;
     color: white;
-
 }
